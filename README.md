@@ -14,7 +14,7 @@ Our client is Tom, a Colorado Board of Elections employee. He wishes to conduct 
 To accomplish these tasks, we used the following resources:
 	<ol>
 	<li> Data Source = 'election_results.csv'; and
-	<li> Software = Python (v 3.9.7); Visual Code Studio (v 1.68,1);
+	<li> Software = Python (v 3.9.7); Visual Code Studio (v 1.68.1);
 	</ol>
 
 The source data for this analysis (filename = 'election_results.csv') has the following structure:
@@ -55,13 +55,17 @@ Analysis results suggest the following conclusions:
 	<ol>
 	<li> There were 369,711 total votes cast in the election.
 	<li> There were three candidates who received votes:
+		<ol>
     	<li> Charles Casper Stockham,
         <li> Diana DeGette, and
         <li> Raymon Anthony Doane.
+		</ol>
     <li> There candidate results were as follows:
+		<ol>
     	<li> Charles Casper Stockham received 23.0% of the vote (#votes = 85,213);
         <li> Diana DeGette received 73.8% of the vote (#votes = 272,892); and
         <li> Raymon Anthony Doane received 3.1% of the vote (#votes = 11,606);
+		</ol>
     <li> The winning candidate was Diana DeGette, who received 73.8% of the vote (#votes = 272,892).
 	</ol>
 
