@@ -1,14 +1,15 @@
 # Election Analysis (using Python)
 
 ## Project Overview
-Our client is Tom, a Colorado Board of Elections employee. He wishes to conduct an election audit of the tabulated results for a US congressional precinct in colorado. Tom has asked that the following tasks be undertaken to complete the audit:  
+Our client is Tom, a Colorado Board of Elections employee. He wishes to conduct an election audit of the tabulated results for a US congressional precinct in Colorado. Tom has asked that the following tasks be undertaken to complete the audit:  
 	<ol>
-	<li> Calculate the total number of votes cast in this election (for all candidates);
-	<li> Extract a complete list of the candidates who received votes;
-    <li> Calculate the total number of votes each candidate received;
-    <li> Calculate the percentage of votes each candidate received; and
-    <li> Determine the winner of the election (based on popular vote).
+	<li> Determine election results (total #votes & %votes) for each candidate;
+	<li> Determine election results (total #votes & %votes) for each county;
+	<li> Find the county with the largest turnout; and
+	<li> Determine the winner of the election (based on popular vote).
 	</ol>
+
+We have been asked to write a python script that determines election results, prints findings to the terminal, and saves them to a text file.
 
 ## Resources (Source Data & Analysis Software)
 To accomplish these tasks, we used the following resources:
@@ -23,13 +24,13 @@ The source data for this analysis (filename = 'election_results.csv') has the fo
 	<li> It contains 3 columns (first column contains numeric data, and second and third columns contain strings)
 	<li> The headers (Keys) are 'Ballot ID', 'County', and 'Candidate'
 	</ol>
-We used python to automate the election analysis and to output analysis results to a text (.csv) file, as described below.
+We used python 3 to automate the election analysis and to output analysis results to a text (.csv) file, as described below.
 
 ## Results (Files Created)
 The python code that we created resulted in the following outputs (files created):
 	<ol>
 	<li> Data Analysis Results File = 'election_analysis.txt'; and
-	<li> Python Script = 'PyPoll.py';
+	<li> Python Script = 'PyPoll_Challenge.py';
 	</ol>
 
 The analysis results file (filename = 'election_analysis.txt') has the following structure:
@@ -54,18 +55,7 @@ The analysis python script (filename = 'PyPoll.py') has the following structure:
 Analysis results suggest the following conclusions:
 	<ol>
 	<li> There were 369,711 total votes cast in the election.
-	<li> There were three candidates who received votes:
-		<ol>
-    	<li> Charles Casper Stockham,
-        <li> Diana DeGette, and
-        <li> Raymon Anthony Doane.
-		</ol>
-    <li> There candidate results were as follows:
-		<ol>
-    	<li> Charles Casper Stockham received 23.0% of the vote (#votes = 85,213);
-        <li> Diana DeGette received 73.8% of the vote (#votes = 272,892); and
-        <li> Raymon Anthony Doane received 3.1% of the vote (#votes = 11,606);
-		</ol>
-    <li> The winning candidate was Diana DeGette, who received 73.8% of the vote (#votes = 272,892).
+	<li> The winning candidate was Diana DeGette, who received 73.8% of the vote (#votes = 272,892).
+	<li> The county with the largest turnout (#votes = 306,055, 82% of the vote) was in Denver, CO.
 	</ol>
 
